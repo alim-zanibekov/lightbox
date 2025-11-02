@@ -1,0 +1,65 @@
+menu "App Configuration"
+
+    config APP_WIFI_STA_SSID
+        string "WiFi SSID"
+        default ""
+        help
+            SSID (network name) to connect to.
+
+    config APP_WIFI_STA_PASSWORD
+        string "WiFi Password"
+        default ""
+        help
+            Password for WiFi.
+
+    config APP_WIFI_STA_ENABLED
+        bool "WiFi STA enabled"
+        default n
+
+    config APP_WIFI_STA_TO_AP_FALLBACK_TIMEOUT
+        int "Fallback to AP"
+        default 30
+        help
+            Fallback to AP mode after X seconds
+
+    config APP_WIFI_AP_SSID
+        string "WiFi SSID"
+        default "lightbox"
+        help
+            SSID (network name) in the Access Point mode
+
+    config APP_WIFI_AP_SSID_HIDDEN
+        bool "WiFi SSID Hidden"
+        default n
+
+    config APP_WIFI_AP_PASSWORD
+        string "WiFi Password"
+        default "12345678"
+        help
+            Password for Access Point WiFi.
+
+    config APP_WIFI_AP_ALWAYS_ENABLED
+        bool "Access Point always enabled"
+        default n
+        help
+            Always keep Access Point wifi
+
+    config APP_OTA_SKIP_VERSION_CHECK
+        bool "Skip OTA version check"
+        default y
+        help
+            Skip version check on OTA update
+
+    config APP_DEVICE_NAME
+        string "Device Name"
+        default "Lightbox"
+
+    config APP_MDNS_HOSTNAME
+        string "mDNS hostname"
+        default "lightbox"
+
+    config APP_LED_STRIP_GPIO
+        int "LED strip data line GPIO"
+        default 22
+
+endmenu

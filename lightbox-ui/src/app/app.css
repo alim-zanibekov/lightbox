@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+/*@custom-variant dark (&:where(.dark, .dark *));*/
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer base {
+  :root {
+    --is-xs: 1;
+    --is-sm: 0;
+    --is-md: 0;
+    --is-lg: 0;
+  }
+
+  @media (min-width: theme('screens.sm')) {
+    :root {
+      --is-sm: 1;
+    }
+  }
+
+  @media (min-width: theme('screens.md')) {
+    :root {
+      --is-md: 1;
+    }
+  }
+
+  @media (min-width: theme('screens.lg')) {
+    :root {
+      --is-lg: 1;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+dependencies:
+#  espressif/esp-dsp: '*'
+  espressif/mdns: '*'
+  espressif/led_strip: ^3.0.0
+  joltwallet/littlefs: ^1.20.1
+  ## Required IDF version
+  idf:
+    version: '>=4.1.0'

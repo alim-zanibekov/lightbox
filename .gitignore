@@ -1,0 +1,15 @@
+.idea/
+.direnv/
+.DS_Store
+
+build/
+managed_components/
+node_modules/
+dist/
+
+sdkconfig
+sdkconfig.old
+.env
+
+snippets/
+.cache/

@@ -1,0 +1,27 @@
+.layout {
+  container-type: inline-size;
+  container-name: layout;
+  background: #888888;
+}
+
+.layout .grid {
+  grid-template-columns: 1fr 1fr calc(var(--spacing) * 82);
+  grid-template-areas:
+      "canvas canvas paint-gallery"
+      "canvas canvas paint-gallery"
+      "canvas canvas paint-gallery";
+  gap: calc(var(--spacing) * 4);
+}
+
+
+@container layout (max-width: 64rem) {
+  .layout .grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr calc(var(--spacing) * 17);
+    grid-template-areas:
+        "canvas"
+        "settings";
+  }
+}
+
+
