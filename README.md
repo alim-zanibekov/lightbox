@@ -1,6 +1,7 @@
 # Lightbox
 
 This is my small ESP32 project that powers a paper-cut lightbox.
+You can read more about it here: [https://alim.me/posts/lightbox](https://alim.me/posts/lightbox/).
 
 |                                                  |                                                |
 | ------------------------------------------------ | ---------------------------------------------- |
